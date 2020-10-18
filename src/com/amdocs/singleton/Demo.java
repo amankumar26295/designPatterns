@@ -4,7 +4,7 @@ public class Demo {
 	
 	public static void main(String[] args) {
 		
-		int s = Singleton.getInstance();
+		Singleton s = Singleton.getInstance();
 		System.out.println(s);
 	}
 
