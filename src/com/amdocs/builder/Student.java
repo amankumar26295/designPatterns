@@ -56,7 +56,7 @@ public class Student {
 			this.rollNumber=rollNumber;
 			return this;
 		}
-		public Builder mobilNumber(String mobileNumber) {
+		public Builder mobileNumber(String mobileNumber) {
 			this.mobileNumber=mobileNumber;
 			return this;
 		}
