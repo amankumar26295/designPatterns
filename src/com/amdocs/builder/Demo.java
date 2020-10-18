@@ -3,7 +3,7 @@ package com.amdocs.builder;
 public class Demo {
 	public static void main(String[] args) {
 		Address address  = new Address.Builder()
-							.street("kailash nagar")
+							.street("Maharaja Hata")
 							.city("arrah")
 							.district("bhojpur")
 							.state("bihar")
