@@ -110,17 +110,17 @@ public class Address {
 			return new Address(this);
 		}
 	}
-	
+
 	@Override
 	public String toString() {
-		StringBuilder sb = new StringBuilder("street : "+street+"\n");
-		sb.append("city : "+city+"\n");
-		sb.append("district : "+district+"\n");
-		sb.append("state : "+state+"\n");
-		sb.append("pinCode :"+pinCode+"\n");
-		
-		return sb.toString();
-		
+		return "Address{" +
+				"street='" + street + '\'' +
+				", city='" + city + '\'' +
+				", district='" + district + '\'' +
+				", state='" + state + '\'' +
+				", landMark='" + landMark + '\'' +
+				", pinCode=" + pinCode +
+				'}';
 	}
 
 }
