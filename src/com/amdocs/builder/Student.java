@@ -5,6 +5,7 @@ public class Student {
 	private String name;
 	private Integer rollNumber;
 	private String mobileNumber;
+	private String gender;
 	private Address address;
 	
 	private Student(Builder builder) {
@@ -38,12 +39,21 @@ public class Student {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
-	
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
 	public static class Builder{
 		
 		private String name;
 		private Integer rollNumber;
 		private String mobileNumber;
+		private String gender;
 		private Address address;
 		
 		
@@ -60,6 +70,12 @@ public class Student {
 			this.mobileNumber=mobileNumber;
 			return this;
 		}
+
+		public Builder gender(String gender) {
+			this.gender=gender;
+			return this;
+		}
+
 		public Builder address(Address address) {
 			this.address=address;
 			return this;
@@ -70,16 +86,17 @@ public class Student {
 		}
 		
 	}
-	
+
 	@Override
 	public String toString() {
-		StringBuilder sb = new StringBuilder("Name : "+name+"\n");
-		sb.append("RollNumber : "+rollNumber+"\n");
-		sb.append("Mobile Number : "+mobileNumber+"\n");
-		sb.append(address.toString());
-		
-		return sb.toString();
+		return "Student{" +
+				"name='" + name + '\'' +
+				", rollNumber=" + rollNumber +
+				", mobileNumber='" + mobileNumber + '\'' +
+				", gender='" + gender + '\'' +
+				", address=" + address +
+				'}';
 	}
-	
+
 
 }
