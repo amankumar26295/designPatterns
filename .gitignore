@@ -1,0 +1,34 @@
+# Log files
+*.log
+
+# Generated folder
+
+ # Maven build folder
+target/
+
+# TestNG output folder
+test-output/
+
+# Java class files
+*.class
+
+# Archive files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+
+# helm
+requirements.lock
+
+# IntelliJ
+*.iml
+.idea/
+
+# eclipse
+.settings
+.project
+.classpath

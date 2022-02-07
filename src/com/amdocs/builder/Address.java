@@ -5,6 +5,7 @@ public class Address {
 	private String city;
 	private String district;
 	private String state;
+	private String landMark;
 	private Integer pinCode;
 	
 	private Address(Builder builder) {
@@ -13,11 +14,20 @@ public class Address {
 		this.district=builder.district;
 		this.state=builder.state;
 		this.pinCode=builder.pinCode;
+		this.landMark=builder.landMark;
 	}
 
 	public String getStreet() {
 		
 		return street;
+	}
+
+	public String getLandMark() {
+		return landMark;
+	}
+
+	public void setLandMark(String landMark) {
+		this.landMark = landMark;
 	}
 
 	public void setStreet(String street) {
@@ -64,6 +74,7 @@ public class Address {
 		private String district;
 		private String state;
 		private Integer pinCode;
+		private String landMark;
 		
 		public Builder street(String street) {	
 			this.street = street;	
@@ -87,6 +98,11 @@ public class Address {
 		
 		public Builder pinCode(Integer pinCode) {
 			this.pinCode=pinCode;
+			return this;
+		}
+
+		public Builder landMarks(String landMark) {
+			this.landMark=landMark;
 			return this;
 		}
 		
