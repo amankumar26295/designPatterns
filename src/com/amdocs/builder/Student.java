@@ -6,6 +6,7 @@ public class Student {
 	private Integer rollNumber;
 	private String mobileNumber;
 	private Integer age;
+	private String gender;
 	private Address address;
 	
 	private Student(Builder builder) {
@@ -48,13 +49,22 @@ public class Student {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
-	
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
 	public static class Builder{
 		
 		private String name;
 		private Integer rollNumber;
 		private String mobileNumber;
 		private Integer age;
+		private String gender;
 		private Address address;
 		
 		
@@ -75,6 +85,12 @@ public class Student {
 			this.age=age;
 			return this;
 		}
+
+		public Builder gender(String gender) {
+			this.gender=gender;
+			return this;
+		}
+
 		public Builder address(Address address) {
 			this.address=address;
 			return this;
@@ -93,6 +109,7 @@ public class Student {
 				", rollNumber=" + rollNumber +
 				", mobileNumber='" + mobileNumber + '\'' +
 				", age=" + age +
+				", gender='" + gender + '\'' +
 				", address=" + address +
 				'}';
 	}
